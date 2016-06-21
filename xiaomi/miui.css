@@ -44,8 +44,13 @@ body a:hover {
     width: 100%;
     margin: 0;
     line-height: 100px;
+    clear: both;
+
 }
 
+#body-top-on:after{clear: both;
+    content: "";
+    display: block;}
 #body-top {
     width: 1226px;
     margin: 0 auto;
@@ -211,6 +216,9 @@ rgba(225, 225, 225, .7);
     width: 1226px;
     margin: 0 auto;
 }
+#head-in:after{clear: both;
+    content: "";
+    display: block;}
 
 #head {
     height: 40px;
@@ -920,6 +928,12 @@ rgba(225, 225, 225, .7);
 
 .float-margin {
     margin-right: 0;
+
+}
+.clear{
+    clear: both;
+    content: " ";
+    display: block;
 }
 
 
