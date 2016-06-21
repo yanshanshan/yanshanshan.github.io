@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫网站</title>
+    <style>
+        .big-div {
+            width: 1230px;
+            margin: 0 auto;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            font-size: 14px;
+            color: #999;
+            font-family: Arial;
+        }
+
+        body a {
+            text-decoration: none;
+        }
+
+        .ul-style {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .head-top {
+            background-color: #f2f2f2;
+            font-size: 12px;
+        }
+
+        .head-top a:hover {
+            color: #c40000;
+        }
+
+        .head-top-lf {
+            float: left;
+            margin: 0;
+        }
+
+        .head-top-lf > span {
+            padding: 0 10px;
+        }
+
+        .head-top-in {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .head-top-rg {
+
+        }
+
+        .head-top-rg > li {
+            float: right;
+            padding: 0 10px;
+        }
+
+        .head-bottom {
+            background-color: #fff;
+        }
+
+        .bead-bottom-in {
+            margin: 0 auto;
+            height: 130px;
+        }
+
+        .bead-bottom-logo {
+            height: 130px;
+            width: 290px;
+            position: absolute;
+        }
+
+        .logo {
+            width: 240px;
+            height: 130px;
+            margin: 0 25px;
+        }
+
+        .mall-search {
+            width: 625px;
+            height: 130px;
+            padding-top: 38px;
+            margin: 0 auto;
+            min-width: 410px;
+        }
+
+        .mall-search-content {
+            width: 100%;
+            height: 36px;
+            border: 2px solid #c40000;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .mall-search-input {
+            height: 36px;
+            width: 491px;
+            outline: medium;
+            border: none;
+            padding: 0px;
+        }
+
+        .mall-search-button {
+            height: 36px;
+            width: 130px;
+            border: none;
+            background-color: #c40000;
+            padding: 0;
+            margin: 0;
+            float: right;
+            font-size: 18px;
+            color: white;
+            letter-spacing: 7px;
+            outline: medium;
+        }
+
+        .submit-value {
+            position: absolute;
+            top: 0;
+            margin: 0 0 0 8px;
+            width: 491px;
+            font-size: 15px;
+            line-height: 36px;
+        }
+
+        .submit-value:hover {
+            color: #ECE9E9;
+        }
+
+        .mall-search-query {
+            font-size: 15px;
+            color: #ccc;
+            padding-top: 5px;
+        }
+
+        .query-label {
+            float: left;
+            padding: 0 12px;
+            border-right: 1px solid #ccc;
+        }
+
+        .query-last {
+            border-right: none;
+        }
+
+        .body-navigation {
+            background-color: #DD2727;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .body-navigation-in {
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .description {
+            width: 200px;
+            background-color: #c40000;
+            float: left;
+            margin-right: 14px;
+        }
+
+        .description > i {
+            margin-left: 14px;
+        }
+
+        .description > span {
+            margin-left: 8px;
+        }
+
+        .body-navigation-in > img {
+            width: 90px;
+            height: 36px;
+            padding: 0 14px;
+            float: left;
+        }
+
+        .body-navigation-in > a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+        }
+        .banner-con{
+            background-color: #f5f5f5;
+
+
+            height: 500px;
+        }
+        .normal-nav{width: 200px;height: 500px;position: relative;left: 0;z-index: 111;background-color: rgba(238,238,238,.95);}
+        .normal-nav>li:hover{background-color: white;color: black;}
+        .normal-nav>li{height: 31.2px;line-height: 31.2px;padding-left: 14px;}
+        .banner-con-img{ background-image:url('h4.jpg');position: absolute;width: 1180px;height: 500px;}
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="page">
+    <div class="head">
+        <div class="head-top">
+            <div class="head-top-in big-div">
+                <p class="head-top-lf">
+                    <span>喵， 欢迎天猫</span>
+                    <a>请登录</a>
+                    <a>免费注册</a>
+                </p>
+                <ul class="head-top-rg ul-style">
+                    <li>
+                        <a>我的淘宝</a>
+                        <i></i>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>我关注的品牌</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>购物车<span>0</span>件</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>收藏夹</a>
+                    </li>
+                    <li class="head-top-separator">
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>手机版</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>淘宝网</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>商家支持</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a>网站导航</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="bead-bottom-logo">
+            <img class="logo" src="h1.png">
+        </div>
+        <div class="head-bottom">
+            <div class="bead-bottom-in big-div">
+                <div class="mall-search">
+                    <from class="mall-search-content">
+                        <input type="text" class="mall-search-input">
+                        <button type="submit" class="mall-search-button">搜索</button>
+                        <p class="submit-value">骑士夺冠的秘闻</p>
+                    </from>
+                    <ul class="mall-search-query ul-style">
+                        <li class="query-label">
+                            <a class="query-gray">t恤男</a>
+                        </li>
+                        <li class="query-label"><a class="query-red">牛仔裙</a></li>
+                        <li class="query-label"><a class="query-gray">nba</a></li>
+                        <li class="query-label"><a class="query-red">詹姆斯</a></li>
+                        <li class="query-label"><a class="query-gray">防晒霜</a></li>
+                        <li class="query-label"><a class="query-red">凉鞋</a></li>
+                        <li class="query-label"><a class="query-gray">内裤</a></li>
+                        <li class="query-label"><a class="query-red">蚊帐</a></li>
+                        <li class="query-label"><a class="query-gray">手表</a></li>
+                        <li class="query-label query-last"><a class="query-gray">洗衣液</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-navigation">
+        <div class="body-navigation-in big-div">
+            <div class="description">
+                <i>三</i>
+                <span>商品分类</span>
+            </div>
+            <img src="h2.png">
+            <img src="h3.png">
+            <a href="https://vip.tmall.com/vip/index.htm?spm=875.7931836/B.2016004.3.oi6q4C&acm=lb-zebra-148799-667861.1003.8.708714&scm=1003.8.lb-zebra-148799-667861.ITEM_14561845383563_708714"
+               class="body-navigation-list">商品分类</a>
+            <a href="https://www.tmall.com/wow/brand/act/fashion?spm=875.7931836/B.2016004.4.oi6q4C&acm=lb-zebra-148799-667861.1003.8.708714&scm=1003.8.lb-zebra-148799-667861.ITEM_14561841536074_708714"
+               class="body-navigation-list">品牌街</a>
+            <a class="body-navigation-list">电器城</a>
+            <a class="body-navigation-list">喵鲜生</a>
+            <a class="body-navigation-list">医药管</a>
+            <a class="body-navigation-list">营业厅</a>
+        </div>
+    </div>
+
+    <div class="banner-con">
+
+        <div class="banner-con-in  big-div">
+            <div class="banner-con-img"></div>
+            <ul class="normal-nav ul-style">
+                <li>
+                    <i></i>
+                    <span>女装 /内衣</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>男装 /运动户外</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>女鞋 /男鞋 /箱包</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>化妆品 /个人护理</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span> 腕表 /珠宝饰品 /眼镜</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>手机 /数码 /电脑办公</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>母婴玩具</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>零食 /进口食品 /茶酒</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>生鲜水果</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>大家电 /生活电器</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>家具建材</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span> 汽车 /配件 /用品</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>家纺 /家饰 /鲜花</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>医药保健/span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>厨具 /收纳 /宠物</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>图书音像</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
