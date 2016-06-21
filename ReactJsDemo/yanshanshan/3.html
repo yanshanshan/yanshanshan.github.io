@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background-image: url(image/hua2.jpg),url(image/img_navsprites.gif);
+            background-repeat: no-repeat;
+        }
+        #r1{
+            border-radius: 25px;
+            background: #BAC007;
+            padding:20px;
+            width:200px;
+            height: 150px;
+            
+        }
+        #r2{
+            border-radius: 25px;
+            border: 2px solid #BAC007;
+            padding:20px;
+            width:200px;
+            height: 150px;
+            background: radial-gradient(red,salmon,royalblue,blue);
+        }
+        #r3{
+            border-radius:50%;
+            background: url(image/hua2.jpg);
+            background-size: 800px 600px;
+
+            background-repeat: repeat;
+            padding: 20px;
+            width:200px;
+            height: 150px;
+
+            line-height: 150px;
+        }
+        div{
+            border:1px solid black;
+            padding:35px;
+            background-image: url(image/hua2.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+
+
+
+        }
+        #div1{
+            background-origin: border-box;
+
+        }
+        #div2{
+            background-origin: content-box;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<p id="r1">border-radius 属性允许向元素添加圆角</p>
+<p id="r2">指定边框元素的圆角：</p>
+<p id="r3">指定背景图片元素圆角</p>
+<div id="div1">
+    lorem ipsum dolor sit amet,consectetuer adipiscing elit,Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+    ea commodo consequat.
+</div>
+<div id="div2">
+    lorem ipsum dolor sit amet,consectetuer adipiscing elit,Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+    ea commodo consequat.
+</div>
+</body>
+</html>

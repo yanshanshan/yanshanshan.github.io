@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div style="display: block;">我是div，我要占一行</div>
+
+<span style="display: inline">aaaa</span>
+<span style="display: inline-block;width: 100px;height:200px;border:1px solid red">bbb</span>
+<span>ccc</span>
+
+
+
+<div style="position: relative;border: 1px solid red;width: 500px;height: 500px;">
+
+    <div style="position: absolute;top: 0px;right: 0">我是定位元素position: absolute，我有特权, 我要去左上角</div>
+
+</div>
+
+
+<div style="border: 1px solid red;width: 500px;height: 500px;">
+
+    <div style="position: absolute;z-index: 1000;">
+        <div style="position: absolute;">asdjfasdflasdkjf;klasdjf;laksdfj;</div>
+        <div style="position: absolute;">asdjfasdflasdkjf;klasdjf;laksdfj;</div>
+        <div style="position: absolute;">asdjfasdflasdkjf;klasdjf;laksdfj;</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

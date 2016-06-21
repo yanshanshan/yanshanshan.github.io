@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0 auto;
+            color: #414142;
+            font-family: Arial;
+            margin-bottom: 300px;
+
+        }
+
+        #d1 {
+            border: 3px solid #6AC5AC;
+            position: relative;
+            margin: 20px;
+        }
+
+        #d1 > p {
+            margin: 0;
+            background-color: #dd1144;
+            width: 50px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .d1-span {
+            display: block;
+            padding: 10px;
+        }
+
+        .d1-p {
+
+            position: relative;
+            left: 0;
+            top: 0;
+
+        }
+
+        .d1-p2 {
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+        }
+
+        #d2 {
+            width: 600px;
+            margin: 0 auto;
+            border: 3px solid #6AC5AC;
+            position: relative;
+        }
+
+        .d2-p, .d2-p2 {
+            margin: 0;
+            background-color: #dd1144;
+            width: 50px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .d2-p2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .d2-p {
+            position: absolute;
+        }
+
+        .d2-p3 {
+            margin: 10px;
+        }
+
+        #d3 {
+            border: 3px solid #6AC5AC;
+            padding: 10px;
+            margin: 20px auto;
+            width: 500px;
+            box-sizing: border-box;
+        }
+
+        #relative {
+            position: relative;
+            top: -60px;
+            left: 20px;
+            border: 3px solid #6AC5AC;
+            width: 800px;
+            background-color: white;
+        }
+
+        #fixed {
+            position: fixed;
+            width: 200px;
+            right: 0;
+            bottom: 0;
+            border: 3px solid #6AC5AC;
+            background-color: white;
+            z-index: 1;
+
+        }
+
+        #r-a {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 3px solid #6AC5AC;
+        }
+
+        #r-a-in {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            right: 0;
+            top: 120px;
+            border: 3px solid #dd1144;
+        }
+
+        #big {
+            position: relative;
+            border: 3px solid #6AC5AC;
+
+            margin: 20px auto;
+        }
+
+        #nav {
+            position: absolute;
+            width: 25%;
+            height: 180px;
+            left: 0;
+            top: 0;
+            border: 3px solid #dd1144;
+        }
+
+        .nav-ul {
+            color: #D64078;
+
+        }
+
+        #section {
+            border: 3px solid yellow;
+
+            position: relative;
+            margin-left: 25.5%;
+            margin-top: 0;
+        }
+
+        .section-head {
+            background-color: yellow;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            margin-top: 0;
+
+        }
+
+        #section > p {
+            padding: 0 15px 0 15px;
+            margin: 20px 0 20px 0;
+        }
+
+        .section-foot {
+            background-color: yellow;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #section2 {
+            border: 3px solid yellow;
+
+            position: relative;
+            margin-left: 25.5%;
+            margin-top: 0;
+        }
+
+        #section2 > p {
+            padding: 0 15px 0 15px;
+            margin: 20px 0 26px 0;
+        }
+
+        #section3 {
+            border: 3px solid yellow;
+            position: relative;
+            margin-left: 25.5%;
+            margin-top: 0;
+        }
+
+        #section3 > p {
+            padding: 0 25px 0 25px;
+            margin: 26px 0 26px 0;
+        }
+
+        .float {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #eeeeee;
+        }
+
+        .float > p {
+            padding: 15px;
+        }
+
+        .float > img {
+            float: right;
+            width: 200px;
+        }
+
+        .section {
+            border: 3px solid #6AC5AC;
+            position: relative;
+
+            overflow: auto
+        }
+
+        .section2 {
+            position: relative;
+            border: 3px solid #6AC5AC;
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin: 1em;
+
+        }
+
+        .float2 {
+            position: relative;
+            border: 3px solid #6AC5AC;
+            clear: left;
+            overflow: auto
+        }
+
+        .a {
+            height: 200px;
+            border: 3px solid #dd1144;
+            float: left;
+            width: 25%;
+        }
+
+        .b {
+            border: 3px solid #000080;
+            margin-left: 25%;
+        }
+
+        .d {
+            border: 3px solid #000080;
+            margin-left: 25%;
+        }
+
+        .cc {
+            margin: 0 auto;
+        }
+
+        .c {
+            display: inline-block;
+            margin: 20px;
+            height: 100px;
+            width: 200px;
+            border: 3px solid #6AC5AC;
+        }
+        .ee{
+            border:  3px solid #6AC5AC;
+        display: flex;
+            position: relative;
+            margin: 10px auto 10px auto;
+        }
+        .e{
+            flex: e;
+        width: 200px;
+        min-width: 100px;
+        border: 3px solid #dd1144;
+        margin: 10px;}
+        .f{ flex: f;
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #dd1144;
+        }
+        .g{flex: g;
+         width: 33%;
+          margin: 10px;
+         border: 3px solid #dd1144;}
+        .h{flex: h;
+            width: 60%;
+            margin: 10px;
+            border: 3px solid #dd1144;}
+
+
+    </style>
+
+</head>
+<body>
+<div id="d1">
+    <p class="d1-p">div</p>
+    <span class="d1-span">
+   div 是一个标准的块级元素。一个块级元素会新开始一行并且尽可能撑满容器。
+    其他常用的块级元素包括 p 、 form 和HTML5中的新元素： header 、
+    footer 、 section 等等。
+    </span>
+
+    <p class="d1-p2">div</p>
+</div>
+
+<div id="d2">
+    <p class="d2-p">div</p>
+
+    <p class="d2-p3">设置块级元素的 width 可以阻止它从左到右撑满容器。
+        然后你就可以设置左右外边距为 auto 来使其水平居中。元素会占据你所指定的宽度
+        ，然后剩余的宽度会一分为二成为左右外边距。
+    </p>
+
+    <p class="d2-p3">
+        唯一的问题是，当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。
+        让我们再来改进下这个方案...
+    </p>
+
+    <p class="d2-p2">div</p>
+</div>
+<div id="d3">
+    <p>一样大</p>
+</div>
+<div id="relative">
+    <p>relative1</p>
+</div>
+<div id="fixed">
+    <p class="d2-p">div</p>
+
+    <p>Hello！暂时不要太关注我哦。</p>
+
+    <p class="d2-p2">div</p>
+</div>
+<div id="r-a">
+    <p class="d2-p">div</p>
+
+    <p>
+        这个元素是相对定位的。如果它是 position: static; ，
+        那么它的绝对定位子元素会跳过它直接相对于body元素定位。
+    </p>
+
+    <p class="d2-p2">div</p>
+
+    <div id="r-a-in">
+        <p class="d2-p">div</p>
+
+        <p>
+            这个元素是绝对定位的。它相对于它的父元素定位。
+        </p>
+
+        <p class="d2-p2">div</p>
+    </div>
+</div>
+
+<div id="big">
+    <span class="d2-p" style="background-color: #6AC5AC; width: 130px; display: inline-block">div id= big</span>
+    <nav id="nav">
+        <span class="d2-p" style="display: inline-block;">nav</span>
+        <ul class="nav-ul">
+            <li>Home</li>
+            <li>Taco Menu</li>
+            <li>Draft List</li>
+            <li>Hours</li>
+            <li>Contact</li>
+            <li>Directions</li>
+        </ul>
+        <p class="d2-p2">nav</p>
+    </nav>
+    <div id="section">
+        <span class="section-head">section</span>
+
+        <p>section s的 margin-left 样式确保了有足够的空间容纳 nav 元素。</p>
+        <span class="section-foot">section</span>
+    </div>
+    <div id="section2">
+        <span class="section-head">section</span>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+            venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+            lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla
+            congue eros nonfermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris
+            quis diam velit.</p>
+        <span class="section-foot">section</span>
+    </div>
+    <div id="section3">
+        <span class="section-head">section</span>
+
+        <p>section s的 margin-left 样式确保了有足够的空间容纳 nav 元素。</p>
+        <span class="section-foot">section</span>
+    </div>
+
+</div>
+<div class="float">
+    <img src="image/hua1.jpg">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+        dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum
+        augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+        convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+        ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+        Donec vitae dui eget tellus gravida venenatis.
+        Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+        Cras ac leo purus. Mauris quis diam velit.
+    </p>
+
+
+</div>
+<div class="section2">
+    <p>
+
+    <p class="d2-p">section</p></p>
+    <p>我感觉在浮动</p>
+
+    <p class="d2-p2">box</p>
+</div>
+<div class="section">
+    <img src="image/hua2.jpg" style="height: 200px; float: right;">
+
+    <p class="d2-p">section</p>
+
+    <p>在这个例子中， section 元素实际上是在 div 之后的（译注：DOM结构上）。
+        然而 div 元素是浮动到左边的，于是 section 中的文字就围绕了 div ，并且
+        section 元素包围了整个元素。如果我们想让 section 显示在浮动元素之后呢？
+    </p>
+
+    <p class="d2-p2">box</p>
+</div>
+
+<div class="float2">
+    <div class="a">这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+    </div>
+    <div class="b">这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+    </div>
+    <div class="d"> 这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。
+        这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。
+        原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了
+    </div>
+</div>
+<div style="border: 3px solid #6AC5AC;margin: 0 auto;max-width: 500px;clear: right;overflow: auto;position: relative;">
+    <img src="image/hua1.jpg" style="float: right;width:50% ">
+
+    <p>你甚至还能同时使用 min-width 和 max-width
+        来限制图片的最大或最小宽度！</p>
+</div>
+<div class="cc">
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+    <div class="c">我在浮动</div>
+</div>
+<div style="height: 500px;border: 3px solid #6AC5AC;align-items: center;justify-content: center;display: flex;">
+    <div style="height: 25%;width: 25%;border: 3px solid #6AC5AC;">css css csscss css
+        csscss css csscss css css
+    </div>
+</div>
+<div class="ee">
+    <div class="e">空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。</div>
+    <div class="f">空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。</div>
+    <div class="g">空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。</div>
+    <div class="h">空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。</div>
+</div>
+
+
+</body>
+</html>

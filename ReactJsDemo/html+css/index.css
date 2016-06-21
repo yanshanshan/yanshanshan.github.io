@@ -1,0 +1,45 @@
+
+#top {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 13px;
+
+}
+#top a{
+    margin-left: 20px;
+    color: #333
+}
+
+#top a:hover{
+    font-size: 150%;
+}
+
+#top a:after{
+    content: '.'
+}
+
+#center {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+}
+
+img {
+    width: 300px;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+}
+
+button {
+    width: 80px;
+    height: 36px;
+    font-size: 16px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+}
