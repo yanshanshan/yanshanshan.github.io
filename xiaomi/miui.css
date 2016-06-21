@@ -27,8 +27,6 @@ body a:hover {
 #page {
     min-width: 1226px;
     width: 100%;
-
-
 }
 
 
@@ -45,7 +43,6 @@ body a:hover {
     margin: 0;
     line-height: 100px;
     clear: both;
-
 }
 
 #body-top-on:after{clear: both;
@@ -54,7 +51,6 @@ body a:hover {
 #body-top {
     width: 1226px;
     margin: 0 auto;
-
 }
 
 .logo {
