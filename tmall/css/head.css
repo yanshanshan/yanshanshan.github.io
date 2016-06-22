@@ -189,5 +189,5 @@ body a {
 .normal-nav{width: 200px;height: 500px;position: relative;left: 0;z-index: 111;background-color: rgba(238,238,238,.95);}
 .normal-nav>li:hover{background-color: white;color: black;}
 .normal-nav>li{height: 31.2px;line-height: 31.2px;padding-left: 14px;}
-.banner-con-img{ background-image:url('h4.jpg');position: absolute;width: 1180px;height: 500px;}
+.banner-con-img{ background-image:url('../h4.jpg');position: absolute;width: 1180px;height: 500px;}
 
