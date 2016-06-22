@@ -120,6 +120,7 @@
 .query-last {
     border-right: none;
 }
+.query-red{color:#DD2727;}
 
 .body-navigation {
     background-color: #DD2727;
@@ -206,12 +207,14 @@
     top: 9px;
     font-size: 12px;
     color: white;
+    right: 0;
 }
 
 .vip-con a {
     display: inline-block;
     color: white;
     text-align: center;
+
 }
 
 .vip-con a:hover {

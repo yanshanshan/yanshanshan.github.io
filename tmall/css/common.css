@@ -28,3 +28,9 @@ body a {
     content: ' ';
     clear: both;
 }
+#page{background-color: #fff;}
+
+.left-float{float: left;
+margin-right: 10px;}
+
+.margin-right-clear{margin-right: 0;}
