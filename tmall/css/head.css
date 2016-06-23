@@ -21,6 +21,7 @@
     height: 32px;
     line-height: 32px;
 }
+.sn-login{margin: 0 15px;}
 
 .head-top-rg {
     float: right;
@@ -50,7 +51,7 @@
 .logo {
     width: 240px;
     height: 130px;
-    margin: 0 25px;
+    margin: 0 -20px;
 }
 
 .mall-search {
@@ -177,6 +178,7 @@
     position: relative;
     left: 0;
     z-index: 111;
+    color: #000;
     background-color: rgba(238, 238, 238, .95);
 }
 
