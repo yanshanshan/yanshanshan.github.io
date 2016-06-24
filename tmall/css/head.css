@@ -2,6 +2,7 @@
 .head-top {
     background-color: #f2f2f2;
     font-size: 12px;
+    border: 1px solid #e5e5e5;
 }
 
 .head-top a:hover {
@@ -27,6 +28,16 @@
     float: right;
 
 }
+.head-top-a{display: inline-block;}
+.head-top-a:hover{background-color: white;border: 1px solid #e5e5e5;position: relative;}
+.head-top-list{display: none;background-color: white;}
+.head-top-list>a{margin-left: 10px;}
+.head-top-a:hover .head-top-list{display: block;position: absolute;z-index: 1111;width: 100px;border-bottom: 1px solid #e5e5e5;
+    left: -1.2px;border-right: 1px solid #e5e5e5;border-left: 1px solid #e5e5e5;}
+
+
+
+
 
 .head-top-rg > li {
     float: left;
