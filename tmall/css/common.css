@@ -29,8 +29,9 @@ body a {
 
 }
 .clear:after{
-    content: ' ';
     clear: both;
+    content: " ";
+    display: block;
 }
 #page{background-color: #f5f5f5;}
 
