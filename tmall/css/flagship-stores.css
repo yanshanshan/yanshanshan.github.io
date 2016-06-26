@@ -91,27 +91,8 @@
     opacity: 0.6;
 }
 
-.meta {
-    width: 172px;
-    height: 66px;
-    padding: 0 10px;
-}
 
-.meta > div {
-    color: #000;
-    font-size: 12px;
-    line-height: 18px;
-    height: 36px;
-    display: block;
-    overflow: hidden;
-    display: -webkit-box;
-
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    margin-top: 10px;
-}
-
-.meta > p {
+.meta-money{
     color: #DD2727;
     font-size: 16px;
     margin: 0px;

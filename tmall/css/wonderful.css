@@ -1,0 +1,11 @@
+.wonderful-title{height: 30px;line-height:30px;text-align: center;font-size: 18px;margin: 30px 0 20px;}
+.wonderful-title-stylt{width: 30px;height: 1px;border-bottom: 1px solid #979797;display: inline-block;margin-bottom:7px;}
+.wonderful-content{}
+.wonderful-line{height: 333px;width: 1230px;margin-bottom: 10px;}
+.wonderful-link{width: 235px;height: 326px;margin-right: 12px;margin-bottom: 7px;float: left;}
+.wonderful-text{color: #666;font-size: 13px;margin: 14px 0 6px 0;}
+.wonderful-line a{width: 231px;height: 322px;display: inline-block;padding: 2px 2px;border: 1px solid white;background-color: white;}
+.wonderful-line a:hover{border: 1px solid #DD2727;}
+.wonderful-line img{width: 100%;}
+.wonderful-line div{width: 211px;height: 69px;padding: 0 12px 8px 12px;}
+.wonderful-right-clear{margin-right: 0;}
