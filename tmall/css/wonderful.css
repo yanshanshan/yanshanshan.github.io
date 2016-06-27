@@ -7,5 +7,6 @@
 .wonderful-line a{width: 231px;height: 322px;display: inline-block;padding: 2px 2px;border: 1px solid white;background-color: white;}
 .wonderful-line a:hover{border: 1px solid #DD2727;}
 .wonderful-line img{width: 100%;}
+.wonderful-line img:hover{opacity: 0.6;}
 .wonderful-line div{width: 211px;height: 69px;padding: 0 12px 8px 12px;}
 .wonderful-right-clear{margin-right: 0;}

@@ -17,6 +17,7 @@ body img{border: 0;
 
 body a {
     text-decoration: none;
+
 }
 
 .ul-style {
@@ -61,3 +62,4 @@ font-size: 18px;margin-top: 30px;height: 30px;line-height: 30px;color: black;}
     -webkit-box-orient: vertical;
     margin: 10px 0 0 0;
 }
+.footer-div{width: 1190px;margin: 0 auto;}
