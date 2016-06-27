@@ -28,7 +28,7 @@
     float: right;
 
 }
-.head-top-a{display: inline-block;}
+.head-top-a{display: inline-block}
 .head-top-a:hover{background-color: white;border: 1px solid #e5e5e5;position: relative;}
 .head-top-list{display: none;background-color: white;position: absolute;}
 .head-top-list>a{margin-left: 10px;}
@@ -120,7 +120,7 @@
 .mall-search-query {
     font-size: 15px;
     color: #ccc;
-    padding-top: 5px;
+    margin-top: 5px;
 }
 
 .query-label {
@@ -195,7 +195,7 @@
 
 .normal-nav > li:hover {
     background-color: white;
-    color: black;
+    color: red;
 }
 
 .normal-nav > li {
@@ -233,6 +233,7 @@
 .vip-con a:hover {
     text-decoration: underline;
 }
+.vip-con:hover{background-color: rgba(0, 0, 0, .8)}
 
 .register {
     height: 22px;
