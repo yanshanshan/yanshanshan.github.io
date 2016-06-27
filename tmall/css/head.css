@@ -28,7 +28,7 @@
     float: right;
 
 }
-.head-top-a{display: inline-block}
+.head-top-a{display: inline-block;}
 .head-top-a:hover{background-color: white;border: 1px solid #e5e5e5;position: relative;}
 .head-top-list{display: none;background-color: white;position: absolute;}
 .head-top-list>a{margin-left: 10px;}
@@ -222,6 +222,7 @@
     color: white;
     right: 0;
 }
+.vip-con:hover{background-color: rgba(0, 0, 0, .8)}
 
 .vip-con a {
     display: inline-block;
@@ -233,7 +234,6 @@
 .vip-con a:hover {
     text-decoration: underline;
 }
-.vip-con:hover{background-color: rgba(0, 0, 0, .8)}
 
 .register {
     height: 22px;
