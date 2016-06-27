@@ -18,6 +18,7 @@
 }
 
 .footer-ensure-link {
+    float: left;
     display: inline-block;
     width: 293px;
     height: 60px;
