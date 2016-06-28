@@ -1,6 +1,6 @@
 .wonderful-title{height: 30px;line-height:30px;text-align: center;font-size: 18px;margin: 30px 0 20px;}
 .wonderful-title-stylt{width: 30px;height: 1px;border-bottom: 1px solid #979797;display: inline-block;margin-bottom:7px;}
-.wonderful-content{}
+#wonderful-content{position: relative;}
 .wonderful-line{height: 333px;width: 1230px;margin-bottom: 10px;}
 .wonderful-link{width: 235px;height: 326px;margin-right: 12px;margin-bottom: 7px;float: left;}
 .wonderful-text{color: #666;font-size: 13px;margin: 14px 0 6px 0;}
