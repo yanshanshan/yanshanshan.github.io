@@ -1,0 +1,35 @@
+.rectangle-bounce {
+    background-color: #1abc9c;
+}
+
+.rectangle-big {
+    position: absolute;
+    width: 35px;
+    top: 35px;
+    left: 42px;
+    margin: 0 auto;
+}
+
+.rectangle {
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    margin: 1px;
+    float: left;
+    animation-name: reducer;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite ;
+
+}
+.rectangle-bounce1{animation-delay: 0.8s;}
+.rectangle-bounce2{animation-delay: 0s;}
+.rectangle-bounce3{animation-delay: 0.1s;}
+.rectangle-bounce4{animation-delay: 0.2s;}
+.rectangle-bounce5{animation-delay: 0.3s;}
+
+@keyframes reducer {
+    0% {transform: scaleY(0.4)}
+    20% {transform: scaleY(1) }
+
+    100% {transform: scaleY(0.4) }
+}

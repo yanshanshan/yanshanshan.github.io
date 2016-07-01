@@ -34,6 +34,42 @@
         .project-name{width: 17.5%;height: 300px;float: left;text-align: center;}
         .project-name>img{width: 80%;margin: 30px 0 10px;}
 
+
+        .rectangle-big {
+            display: inline-block;
+
+            width: 35px;
+            top: 35px;
+            left: 42px;
+            margin: 0 auto;
+        }
+
+        .animation {
+           font-size: 35px;;
+
+            margin: 1px;
+            float: left;
+            animation-name: text;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite ;
+
+
+
+
+        }
+        .animation1{animation-delay: 0.8s;color: #ffac13;}
+        .animation2{animation-delay: 0s;color: pink;}
+        .animation3{animation-delay: 0.1s;color: #009926;}
+        .animation4{animation-delay: 0.2s;color: #83c44e;}
+
+
+        @keyframes text {
+            0% {transform: scale(0.4)}
+            20% {transform: scale(1) }
+
+            100% {transform: scale(0.4) }
+        }
+
     </style>
 </head>
 <body>
@@ -55,7 +91,16 @@
     <div class="project-name color-white">
         <a href="tmall/index.html">天猫首页</a>
     </div>
-    <div class="project-name color-white">我的项目二</div>
+
+
+    <div class="project-name color-white" style="position: relative">
+        <a href="css3-animation/index.html" class="rectangle-big">
+            <div class="animation1 animation">我</div>
+            <div class="animation2 animation">的</div>
+            <div class="animation3 animation">动</div>
+            <div class="animation4 animation">画</div>
+                   </a>
+    </div>
     <div class="project-name color-white">我的项目二</div>
     <div class="project-name color-white">我的项目二</div>
 

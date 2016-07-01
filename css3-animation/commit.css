@@ -1,0 +1,7 @@
+.div-big{ position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    margin: 1px;
+    float: left;
+}
