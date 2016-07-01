@@ -1,0 +1,32 @@
+.spinner-cubes {
+    position: relative;
+    background-color: #67CF22;
+
+}
+.spinner-cubes-in{position: relative;
+top:20px;
+left: 20px;}
+
+.spinner-cubes1, .spinner-cubes2 {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name:spinner;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite ;
+}
+.spinner-cubes2{animation-delay: -0.8s;}
+@keyframes spinner{
+    25%{transform:translateX(40px) rotate(-90deg) scale(0.2) }
+    50%{transform:translateX(40px) translateY(40px) rotate(-180deg)  }
+    75%{ transform: translateX(0px) translateY(40px) rotate(-280deg) scale(0.2)}
+    100%{transform:rotate(-360deg) }
+}
+
+
+
+
