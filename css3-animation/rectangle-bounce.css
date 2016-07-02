@@ -11,7 +11,7 @@
 }
 
 .rectangle {
-    height: 50px;
+    height: 20px;
     width: 5px;
     background-color: white;
     margin: 1px;
@@ -21,15 +21,15 @@
     animation-iteration-count: infinite ;
 
 }
-.rectangle-bounce1{animation-delay: 0.8s;}
-.rectangle-bounce2{animation-delay: 0s;}
-.rectangle-bounce3{animation-delay: 0.1s;}
-.rectangle-bounce4{animation-delay: 0.2s;}
-.rectangle-bounce5{animation-delay: 0.3s;}
+.rectangle-bounce1{animation-delay: 0.1s;}
+.rectangle-bounce2{animation-delay: 0.2s;}
+.rectangle-bounce3{animation-delay: 0.3s;}
+.rectangle-bounce4{animation-delay: 0.4s;}
+.rectangle-bounce5{animation-delay: 0.5s;}
 
 @keyframes reducer {
-    0% {transform: scaleY(0.4)}
-    20% {transform: scaleY(1) }
+    0% {transform: scaleY(1)}
+    20% {transform: scaleY(2.5) }
 
-    100% {transform: scaleY(0.4) }
+    100% {transform: scaleY(1) }
 }

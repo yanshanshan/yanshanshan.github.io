@@ -19,9 +19,9 @@ left: 20px;}
     animation-timing-function: ease-in-out ;
     animation-iteration-count: infinite ;
 }
-.spinner-cubes2{animation-delay: -0.8s;}
+.spinner-cubes2{animation-delay: 0.8s;}
 @keyframes spinner{
-    25%{transform:translateX(40px) rotate(-90deg) scale(0.2) }
+    25%{transform: translateX(40px) rotate(-90deg) scale(0.2) }
     50%{transform:translateX(40px) translateY(40px) rotate(-180deg)  }
     75%{ transform: translateX(0px) translateY(40px) rotate(-280deg) scale(0.2)}
     100%{transform:rotate(-360deg) }
