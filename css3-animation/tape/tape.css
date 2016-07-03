@@ -1,0 +1,286 @@
+body {
+    background-color: #efd1b7;
+}
+
+.home-page {
+    width: 534px;
+    height: 335px;
+    background-color: #d55e40;
+    border-radius: 16px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.home-page-left {
+    height: 90px;
+
+    border-right: #d55e40 solid 5px;
+    border-top: transparent solid 10px;
+    border-bottom: transparent solid 10px;
+    position: absolute;
+    left: -4px;
+    top: 200px;
+}
+
+.home-page-right {
+    height: 90px;
+    border-left: #d55e40 solid 5px;
+    border-top: transparent solid 10px;
+    border-bottom: transparent solid 10px;
+    position: absolute;
+    right: -4px;
+    top: 200px;
+}
+
+.screw {
+    width: 22px;
+    height: 22px;
+    background-color: #8b392e;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.screw1 {
+    width: 6px;
+    height: 16px;
+    background-color: #449ba2;
+    position: absolute;
+    margin: 3px 8px;
+}
+
+.screw2 {
+    width: 16px;
+    height: 6px;
+    background-color: #449ba2;
+    position: absolute;
+    margin: 8px 3px;
+}
+
+.screw-lf-top {
+    left: 10px;
+    top: 5px;
+}
+
+.screw-rt-top {
+    right: 10px;
+    top: 5px;
+}
+
+.screw-lf-bottom {
+    left: 10px;
+    bottom: 5px;
+}
+
+.screw-rt-bottom {
+    right: 10px;
+    bottom: 5px;
+}
+
+.outer-sticker {
+    width: 466px;
+    height: 200px;
+    padding: 5px 4px;
+    background-color: #8b392e;
+    border-radius: 16px;
+    position: absolute;
+    left: 30px;
+    top: 25px;
+
+}
+
+.outer-sticker-in {
+    background-color: #f3ae53;
+    width: 466px;
+    height: 200px;
+    border-radius: 16px;
+    position: relative;
+
+}
+
+header {
+    width: 426px;
+    height: 62px;
+    padding: 10px 20px 0
+}
+
+.side {
+    background: #d55e40;
+    font-size: 30px;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color: #f3ae53;
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px;
+
+}
+
+.notes {
+    width: 390px;
+    height: 62px;
+    float: left;
+}
+
+.notes > hr {
+    background: #756046;
+    height: 3px;
+    border: none;
+    margin-top: 13px;
+    margin-left: 15px;
+}
+
+.stripe-a {
+    width: 100%;
+    height: 30px;
+    background-color: #8b392e;
+}
+
+.stripe-b {
+    width: 100%;
+    height: 30px;
+    background-color: #449ba2;
+    margin-top: 30px;
+}
+
+.sticker-bottom {
+    width: 456px;
+    height: 19px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 9px 5px;
+    text-align: center;
+}
+
+.sticker-bottom > span {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.sticker-bottom > hr {
+    width: 170px;
+    height: 3px;
+    background: #000;
+    border: none;
+}
+
+.hr1 {
+    float: left;
+}
+
+.hr2 {
+    float: right;
+}
+
+.cassete-center {
+    width: 318px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #d55e40;
+    border-radius: 16px;
+    position: absolute;
+    top: 72px;
+    left: 74px;
+
+}
+
+.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    animation-name: circle-core;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle-core {
+    0% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+
+}
+
+.circle-left {
+    top: 12px;
+    left: 15px;
+}
+
+.circle-right {
+    top: 12px;
+    right: 15px;
+}
+
+.window {
+    width: 122px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -61px;
+    top: 15px;
+    overflow: hidden;
+}
+
+.window-circle {
+    width: 180px;
+    height: 180px;
+    background-color: #8b392e;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle-in {
+    width: 65px;
+    height: 3px;
+    background-color: #d55e40;
+    position: absolute;
+    top: 30px;
+}
+
+.circle-1 {
+    transform: rotate(120deg)
+}
+
+.circle-2 {
+    transform: rotate(240deg)
+}
+
+.circle-core {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1111;
+}
+
+.window-circle1 {
+    top: -60px;
+    left: 80px;
+}
+
+.window-circle2 {
+    top: -60px;
+    left: -140px;
+}
+
+.footer {
+    width: 340px;
+    position: absolute;
+    left: 77px;
+    bottom: 0;
+    border-bottom: 80px solid #8b392e;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.footer-in{ border-bottom: 80px solid #d55e40;bottom:-5px;width: 330px;margin-left: 5px;}
