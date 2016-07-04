@@ -283,4 +283,47 @@ header {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
 }
-.footer-in{ border-bottom: 80px solid #d55e40;bottom:-5px;width: 330px;margin-left: 5px;}
+
+.footer-in {
+    border-bottom: 80px solid #d55e40;
+    bottom: -5px;
+    width: 330px;
+    margin-left: 5px;
+}
+
+.screw-bottom {
+    left: 160px;
+    top: 15px;
+}
+
+.holes-hole-small {
+    position: absolute;
+    bottom: -55px;
+    box-shadow: #8b392e 2px 2px 0px;
+    background-color: white;
+}
+
+.holes-hole-small-lf {
+    left: 80px;
+}
+
+.holes-big {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -70px;
+    box-shadow: #8b392e 2px 2px 0px;
+    background-color: white;
+}
+
+.holes-big-lf {
+    left: 20px;
+}
+
+.holes-big-rt {
+    right: 20px;
+}
+
+.holes-hole-small-rt {
+    right: 80px;
+}
