@@ -1,0 +1,115 @@
+.border {
+    border-right: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+.body-div {
+    width: 800px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.page {
+    position: relative;
+}
+
+
+.absolute {
+    position: absolute;
+}
+
+.hat {
+    width: 25px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: red;
+    left: 15px;
+}
+
+.hat2 {
+    width: 55px;
+    height: 10px;
+    border-radius: 30%;
+    background-color: red;
+    left: 0;
+    bottom: -20px;
+}
+
+.header {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid red;
+    bottom: -50px;
+    left: 5px;
+
+
+}
+
+header{
+    position: relative;
+
+ animation-name:header-move;
+    /*animation-duration: 1s;*/
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 20px 40px;
+}
+@keyframes header-move{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(10deg);}
+
+
+}
+
+.hand-1,.hand-2 {
+    width: 39px;
+    height: 45px;
+    bottom: -55px;
+    left: 25px;
+    transform-origin: 0 45px;
+    animation: hand 1s infinite;
+}
+
+.hand-1{animation-delay: 0.5s;}
+.hand-2{animation-delay: 1s;}
+@keyframes hand {
+       0%{transform: rotate(30deg);}
+    50%{transform: rotate(190deg);}
+    100%{transform: rotate(30deg);}
+}
+
+.body {
+    width: 15px;
+    height: 70px;
+    background-color: red;
+    bottom: -120px;
+    left: 20px;
+}
+
+.foot1,.foot2 {
+    width: 60px;
+    height: 65px;
+    bottom: -185px;
+    left: -35px;
+    transform-origin: 60px 0px;
+    animation: foot 1s infinite;
+}
+
+
+@keyframes foot {
+    0%{transform: rotate(40deg);}
+    20%{transform: rotate(-90deg);}
+   100%{transform: rotate(40deg);}
+
+}
+
+
+.foot2 {
+    transform: rotate(350deg);
+    left: -30px;
+    bottom: -185px;
+    animation-delay: 1s;
+}
+.foot1{animation-delay: 0.5s;}
