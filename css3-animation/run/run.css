@@ -5,12 +5,24 @@
 
 .body-div {
     width: 800px;
-    margin-left: 200px;
-    margin-top: 100px;
+    height: 250px;
+   margin-top: 100px;
+    overflow: hidden;
 }
 
 .page {
     position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
+    animation-name: run1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes run1 {
+    0%{left:-250px;}
+    100%{left:900px;}
+
 }
 
 .absolute {
@@ -80,15 +92,11 @@ header {
     bottom: -55px;
     left: 25px;
     transform-origin: 0 45px;
-    animation: hand 1s infinite;
-}
-
-.hand-1 {
-    animation-delay: 0.5s;
+    animation: hand 0.4s infinite;
 }
 
 .hand-2 {
-    animation-delay: 1s;
+    animation-delay: 0.2s;
 }
 
 @keyframes hand {
@@ -118,15 +126,15 @@ header {
     bottom: -195px;
     left: -35px;
     transform-origin: 60px 0px;
-    animation: foot 1s infinite;
+    animation: foot 0.4s infinite;
 }
 
 @keyframes foot {
     0% {
         transform: rotate(40deg);
     }
-    20% {
-        transform: rotate(-90deg);
+    50% {
+        transform: rotate(-100deg);
     }
     100% {
         transform: rotate(40deg);
@@ -138,27 +146,24 @@ header {
     transform: rotate(350deg);
     left: -30px;
     bottom: -195px;
-    animation-delay: 1s;
+
 }
 
 .foot1 {
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 
-.earth {
-    width: 500px;
-    height: 500px;
-
-
-
-    left: -220px;
-    bottom: -650px;
-    animation-name: earth;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-@keyframes earth {
-    0%{transform: rotate(0deg);  }
-    100%{transform: rotate(360deg);  }
-}
+/*.earth {*/
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*left: -220px;*/
+    /*bottom: -650px;*/
+    /*animation-name: earth;*/
+    /*animation-duration: 6s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-iteration-count: infinite;*/
+/*}*/
+/*@keyframes earth {*/
+    /*0%{transform: rotate(0deg);  }*/
+    /*100%{transform: rotate(360deg);  }*/
+/*}*/
