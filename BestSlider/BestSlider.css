@@ -1,0 +1,47 @@
+.container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+}
+
+.item{
+    width: 300px;
+    height: 200px;
+    background-color: #c3c3c3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.item-active{
+    z-index: 100;
+}
+
+.item img{
+    width: 100%;
+}
+
+
+
+.controller{
+    top:-20px;
+    position:relative;
+
+}
+
+.ctrl-item{
+    display: inline-block;
+    width: 15px;
+    height:15px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+
+
+
+}
+.ctrl-item1{background-color: burlywood;}
