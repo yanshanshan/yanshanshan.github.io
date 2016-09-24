@@ -5,215 +5,320 @@
     <title>yanshanshan个人主页</title>
     <style type="text/css">
         body {
-            background-color: #F5DEB3;
-            margin: 0px;
+            background-color: #FFE4E1;
+        }
+
+        .menu {
             width: 100%;
 
-            /*background-image: url(img/niao.jpg);*/
-            /*background-repeat: no-repeat;*/
-            /*background-position: center;*/
         }
 
-        body a {
-            text-decoration: none;
-        }
-
-        #head {
-            width: 100%;
-        }
-
-        .head-in {
-            width: 1226px;
+        header {
+            width: 1180px;
             margin: 0 auto;
-        }
-
-        .head-in > img {
-            height: 200px;
-            width: 1226px;
-        }
-
-        #page {
-            width: 1226px;
-            margin: 0 auto;
-        }
-
-        .project {
-            width: 1226px;
-            height: 100px;
-
-            font-size: 30px;
             text-align: center;
-
+            color: #89867e;
         }
 
-        .color-blue {
-            background-color: #CAE1FF;
-            color: white;
-            -moz-border-radius: 20px;
-            -webkit-border-radius: 20px;
-            border-radius: 20px;
+        nav {
+            width: 90%;
+            margin: 30px auto;
+            text-align: center;
+            height: 190px;
         }
 
-        .project-dz {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            width: 16.6666667%;
+            float: left;
+        }
+
+        .li1 {
+            background: #d35400;
+        }
+
+        .li2 {
+            background: darkmagenta;
+        }
+
+        .li3 {
+            background: #2196f3;
+        }
+
+        .li4 {
+            background: #d55e40;
+        }
+
+        .li5 {
+            background: #009926;
+        }
+
+        .li6 {
+            background: #6AC5AC;
+        }
+
+        li > a {
+            width: 100%;
+            display: block;
+            position: relative;
+        }
+
+        .content {
+            padding: 30px 0 0;
+            height: 160px;
+            transition: height 0.8s;
+        }
+
+        .text {
+            width: 100%;
+            position: absolute;
+            bottom: 15px;
+        }
+
+        .text p {
+            margin: 45px 0 0;
             font-size: 16px;
-        }
-
-        .color-white {
-            background-color: white;
-            color: #CAE1FF;
-            margin: 30px 30px 30px 0;
+            color: white;
+            font-family: Arial;
 
         }
 
-        .project-name {
-            width: 17.5%;
+        .text span {
+            font-size: 8px;
+            color: #aaaaaa;
+        }
+
+        .content:hover {
             height: 200px;
-            float: left;
-            text-align: center;
+            border-bottom: 4px solid rgba(255, 255, 255, 0.6);
+
         }
 
-        .project-name > img {
-            width: 80%;
-            margin: 30px 0 10px;
-        }
+        .circular {
+            width: 73px;
+            height: 113px;
 
-        .rectangle-big {
-            display: inline-block;
-
-            width: 35px;
-            top: 35px;
-            left: 42px;
+            position: relative;
             margin: 0 auto;
         }
 
-        .animation {
-            font-size: 35px;;
+        .circular1 {
+            width: 113px;
+            height: 113px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0;
+            transition-property: opacity, transform;
+            transition-duration: 0.5s, 0.5s;
+            top: -20px;
+            left: -20px;
+        }
 
-            margin: 1px;
-            float: left;
-            animation-name: text;
-            animation-duration: 1.2s;
-            animation-iteration-count: infinite;
+        .circular2 {
+            width: 73px;
+            height: 73px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.2;
 
         }
 
-        .animation1 {
-            animation-delay: 0.8s;
-            color: #ffac13;
+        nav li:hover section {
+            opacity: 0.2;
+            transform: scale(0.65);
         }
 
-        .animation2 {
-            animation-delay: 0s;
-            color: pink;
-        }
+        .main{
+            position:relative;
+            background-color: #327dd0;
+        width: 70%;height: 900px;
+        margin: 0 auto;}
 
-        .animation3 {
-            animation-delay: 0.1s;
-            color: #009926;
-        }
-
-        .animation4 {
-            animation-delay: 0.2s;
-            color: #83c44e;
-        }
-
-        .animation4 {
-            animation-delay: 0.3s;
-            color: #1abc9c;
-        }
-
-        @keyframes text {
-            0% {
-                transform: scale(0.4)
-            }
-            20% {
-                transform: scale(1)
-            }
-
-            100% {
-                transform: scale(0.4)
-            }
-        }
 
     </style>
 </head>
 <body>
-<div id="head">
+<div class="menu">
+    <header>
+        <h1>纯css3滑动菜单</h1>
+    </header>
+    <nav>
+        <ul>
+
+            <li class="li1">
+                <a href="xiaomi/index.html">
+                    <div class="content">
+                        <div class="circular">
+                            <section class="circular1"></section>
+                            <div class="circular2"></div>
+                        </div>
+                        <div class="text">
+                            <p>小米首页</p>
+                            <span>点击进入</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="li2">
+                <a href="tmall/index.html">
+                    <div class="content">
+                        <div class="circular">
+                            <section class="circular1"></section>
+                            <div class="circular2"></div>
+                        </div>
+                        <div class="text">
+                            <p>天猫首页</p>
+                            <span>点击进入</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="li3">
+                <a href="css3-animation/tape/tape.html">
+                    <div class="content">
+                        <div class="circular">
+                            <section class="circular1"></section>
+                            <div class="circular2"></div>
+                        </div>
+                        <div class="text">
+                            <p>动感磁带</p>
+                            <span>点击进入</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="li4">
+                <a href="BestSlider/BestSlider.html">
+                    <div class="content">
+                        <div class="circular">
+                            <section class="circular1"></section>
+                            <div class="circular2"></div>
+                        </div>
+                        <div class="text">
+                            <p>轮播图片</p>
+                            <span>点击进入</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="li5">
+                <a href="css3-animation/run/index.html">
+                    <div class="content">
+                        <div class="circular">
+                            <section class="circular1"></section>
+                            <div class="circular2"></div>
+                        </div>
+                        <div class="text">
+                            <p>努力奔跑</p>
+                            <span>点击进入</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="li6">
+                <a href="css3-animation/talkmate/index.html">
+                    <div class="content">
+                        <div class="circular">
+                            <section class="circular1"></section>
+                            <div class="circular2"></div>
+                        </div>
+                        <div class="text">
+                            <p>世界这么大我想去看看</p>
+                            <span>点击进入</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="main">
 
 </div>
-<div id="page">
 
-    <div class="project color-blue">
-        <a>我的项目</a><br/>
-        <a class="project-dz">yanshanshan.github.io</a>
-    </div>
-    <div class="project-name color-white">
-        <img src="mi.png">
+<!--<div id="head">-->
 
-        <p><a href="xiaomi/index.html">小米首页</a></p>
-    </div>
-    <div class="project-name color-white">
-        <img src="tm.png">
+<!--</div>-->
+<!--<div id="page">-->
 
-        <p><a href="tmall/index.html">天猫首页</a></p>
-    </div>
+<!--<div class="project color-blue">-->
+<!--<a>我的项目</a><br/>-->
+<!--<a class="project-dz">yanshanshan.github.io</a>-->
+<!--</div>-->
+<!--<div class="project-name color-white">-->
+<!--<img src="mi.png">-->
+
+<!--<p><a href="xiaomi/index.html">小米首页</a></p>-->
+<!--</div>-->
+<!--<div class="project-name color-white">-->
+<!--<img src="tm.png">-->
+
+<!--<p><a href="tmall/index.html">天猫首页</a></p>-->
+<!--</div>-->
 
 
-    <div class="project-name color-white" style="position: relative">
-        <a href="css3-animation/index.html" class="rectangle-big">
-            <div class="animation1 animation">我</div>
-            <div class="animation2 animation">的</div>
-            <div class="animation3 animation">动</div>
-            <div class="animation4 animation">画</div>
-        </a>
-    </div>
-    <div class="project-name color-white">
-        <a href="css3-animation/tape/tape.html" class="rectangle-big">
-            <div class="animation1 animation">转</div>
-            <div class="animation2 animation">动</div>
-            <div class="animation3 animation">的</div>
-            <div class="animation4 animation">磁</div>
-            <div class="animation5 animation">带</div>
+<!--<div class="project-name color-white" style="position: relative">-->
+<!--<a href="css3-animation/index.html" class="rectangle-big">-->
+<!--<div class="animation1 animation">我</div>-->
+<!--<div class="animation2 animation">的</div>-->
+<!--<div class="animation3 animation">动</div>-->
+<!--<div class="animation4 animation">画</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="project-name color-white">-->
+<!--<a href="css3-animation/tape/tape.html" class="rectangle-big">-->
+<!--<div class="animation1 animation">转</div>-->
+<!--<div class="animation2 animation">动</div>-->
+<!--<div class="animation3 animation">的</div>-->
+<!--<div class="animation4 animation">磁</div>-->
+<!--<div class="animation5 animation">带</div>-->
 
-        </a>
+<!--</a>-->
 
-    </div>
-    <div class="project-name color-white">
-        <a href="css3-animation/run/index.html" class="rectangle-big">
-            <div class="animation1 animation">跑</div>
-            <div class="animation2 animation">步</div>
-            <div class="animation3 animation">动</div>
-            <div class="animation4 animation">画</div>
-        </a>
-    </div>
-    <div class="project-name color-white">
+<!--</div>-->
+<!--<div class="project-name color-white">-->
+<!--<a href="css3-animation/run/index.html" class="rectangle-big">-->
+<!--<div class="animation1 animation">跑</div>-->
+<!--<div class="animation2 animation">步</div>-->
+<!--<div class="animation3 animation">动</div>-->
+<!--<div class="animation4 animation">画</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="project-name color-white">-->
 
-        <a href="css3-animation/talkmate/index.html" class="rectangle-big">
-            <div class="animation1 animation">走</div>
-            <div class="animation2 animation">全</div>
-            <div class="animation3 animation">球</div>
-        </a>
-    </div>
-    <div class="project-name color-white">
+<!--<a href="css3-animation/talkmate/index.html" class="rectangle-big">-->
+<!--<div class="animation1 animation">走</div>-->
+<!--<div class="animation2 animation">全</div>-->
+<!--<div class="animation3 animation">球</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="project-name color-white">-->
 
-        <a href="css3-animation/menu-toggle/index.html" class="rectangle-big">
-            <div class="animation1 animation">动</div>
-            <div class="animation2 animation">画</div>
-            <div class="animation3 animation">菜</div>
-            <div class="animation4 animation">单</div>
-        </a>
-    </div>
-    <div class="project-name color-white">
+<!--<a href="css3-animation/menu-toggle/index.html" class="rectangle-big">-->
+<!--<div class="animation1 animation">动</div>-->
+<!--<div class="animation2 animation">画</div>-->
+<!--<div class="animation3 animation">菜</div>-->
+<!--<div class="animation4 animation">单</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="project-name color-white">-->
 
-        <a href="BestSlider/BestSlider.html" class="rectangle-big">
-            <div class="animation1 animation">轮</div>
-            <div class="animation2 animation">播</div>
-            <div class="animation3 animation">图</div>
-            <div class="animation4 animation">片</div>
-        </a>
-    </div>
+<!--<a href="BestSlider/BestSlider.html" class="rectangle-big">-->
+<!--<div class="animation1 animation">轮</div>-->
+<!--<div class="animation2 animation">播</div>-->
+<!--<div class="animation3 animation">图</div>-->
+<!--<div class="animation4 animation">片</div>-->
+<!--</a>-->
+<!--</div>-->
 
-</div>
+<!--</div>-->
 
 
 <!--<a href="/xiaomi/index.html" style="display: inline-block;width: 100px; height:100px;line-height: 100px;text-align: center;font-size: 24px;;border: 1px solid #ccc;">-->
