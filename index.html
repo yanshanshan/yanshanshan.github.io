@@ -5,8 +5,10 @@
     <title>yanshanshan个人主页</title>
     <style type="text/css">
         body {
-            background-color: #FFE4E1;
+            background-color: white;
+            margin: 0;
         }
+        h1{margin: 10px 0;}
 
         .menu {
             width: 100%;
@@ -21,7 +23,7 @@
         }
 
         nav {
-            width: 70%;
+            width: 900px;
             margin: 30px auto;
             text-align: center;
             height: 190px;
@@ -135,13 +137,24 @@
         }
 
         .main{
-            position:relative;
+
             background-color: #327dd0;
-        width: 70%;height: 900px;
+        width: 900px;height: 360px;
         margin: 0 auto;}
+        .content-box{width: 158px;height: 160px;
+            border: 1px solid white;margin: 10px;float: left;
+            position: relative;
+
+        }
 
 
     </style>
+    <link rel="stylesheet" type="text/css" href="css3-animation/css/rotating-plane.css">
+    <link rel="stylesheet" type="text/css" href="css3-animation/css/double.css">
+    <link rel="stylesheet" type="text/css" href="css3-animation/css/rectangle-bounce.css">
+    <link rel="stylesheet" type="text/css" href="css3-animation/css/cubes.css">
+    <link rel="stylesheet" type="text/css" href="css3-animation/css/circular.css">
+
 </head>
 <body>
 <div class="menu">
@@ -240,6 +253,50 @@
 </div>
 
 <div class="main">
+    <div class="content-box">
+        <!--动态平面翻转-->
+        <div class="rotating-plane div-big"><div id="rotating-plane2"></div></div>
+
+    </div>
+    <div class="content-box">
+        <!--双重圆跳动-->
+        <div class="scale-1 div-big">
+            <div id="bounce2"></div>
+            <div id="bounce3"></div>
+        </div>
+
+    </div>
+    <div class="content-box">
+        <!--矩形反弹-->
+        <div class="rectangle-bounce div-big">
+            <div class="rectangle-big">
+                <div class="rectangle-bounce1 rectangle"></div>
+                <div class="rectangle-bounce2 rectangle"></div>
+                <div class="rectangle-bounce3 rectangle"></div>
+                <div class="rectangle-bounce4 rectangle"></div>
+                <div class="rectangle-bounce5 rectangle"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="content-box">
+        <!--游走正方形-->
+        <div class="cubes div-big">
+            <div class="cubes-in">
+                <div class="cubes1"></div>
+                <div class="cubes2"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content-box">
+        <!--圆点闪烁-->
+        <div class="circular-2 div-big">
+            <div class=circular1-2></div>
+        </div>
+
+    </div>
 
 </div>
 
