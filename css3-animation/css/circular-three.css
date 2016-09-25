@@ -1,0 +1,37 @@
+.circular－three {
+    background-color: #bf616a;
+
+}
+
+.circular-three-in {
+    height: 30px;
+    width: 70px;
+    margin: 45px auto;
+}
+
+.circular-three1, .circular-three2, .circular-three3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 3px;
+    float: left;
+    animation-name: circular-three;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite;
+}
+.circular-three1{animation-delay:-0.4s }
+.circular-three2{animation-delay:-0.2s }
+.circular-three3{animation-delay:-0s }
+
+
+
+
+@keyframes circular-three {
+    0%{transform: scale(0)  }
+    45%{transform: scale(1)}
+    90%{transform: scale(0)}
+    100%{transform: scale(0)}
+
+}

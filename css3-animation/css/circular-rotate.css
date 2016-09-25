@@ -1,0 +1,37 @@
+.circular-rotate {
+    background-color: #ffcb65;
+}
+
+.circular-rotate-in {
+    /*background-color: wheat;*/
+    width: 60px;
+    height: 60px;
+    margin: 30px auto;
+    animation-name:circular-rotate-in;
+    animation-timing-function: linear;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.circular-rotate1, .circular-rotate2 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name:circular-rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes circular-rotate-in {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.circular-rotate1{animation-delay: 1s;}
+
+@keyframes circular-rotate {
+    0%{transform:scale(1) }
+    50%{transform: scale(0)}
+    100%{transform:scale(1)}
+}
+
