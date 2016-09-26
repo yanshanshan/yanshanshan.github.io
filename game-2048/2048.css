@@ -1,0 +1,31 @@
+.table{
+width: 100%;height: 100%;
+    position: absolute;}
+
+table{
+    border: 2px solid lightcoral;
+    /*border-collapse: collapse;*/
+    background: lightcoral;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    top:50%;
+    margin-top:-200px ;
+
+
+}
+
+.table td{
+    border: 2px solid lightcoral;
+    color: #D64078;
+    background: cornsilk;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: 50px;
+
+
+
+}
